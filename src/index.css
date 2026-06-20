@@ -4,35 +4,41 @@
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    --background: 60 14% 95%;
+    --foreground: 90 18% 14%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card: 56 18% 97%;
+    --card-foreground: 90 18% 14%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover: 56 18% 97%;
+    --popover-foreground: 90 18% 14%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    --primary: 90 22% 22%;
+    --primary-foreground: 56 30% 96%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 80 14% 86%;
+    --secondary-foreground: 90 22% 22%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: 80 12% 88%;
+    --muted-foreground: 90 10% 38%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent: 36 30% 70%;
+    --accent-foreground: 90 22% 18%;
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive: 0 70% 45%;
+    --destructive-foreground: 56 30% 96%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 84 12% 80%;
+    --input: 84 12% 80%;
+    --ring: 90 22% 22%;
 
-    --radius: 0.5rem;
+    --radius: 0.25rem;
+
+    --moss: 92 24% 28%;
+    --moss-dark: 96 26% 16%;
+    --moss-light: 84 16% 60%;
+    --clay: 26 34% 62%;
+    --cream: 52 32% 93%;
 
     --sidebar-background: 0 0% 98%;
 
@@ -96,6 +102,18 @@
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground font-body;
+  }
+  h1,
+  h2,
+  h3,
+  h4 {
+    @apply font-display;
+  }
+}
+
+@layer utilities {
+  .hover-scale {
+    @apply transition-transform duration-300 hover:scale-105;
   }
 }
