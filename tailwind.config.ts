@@ -21,6 +21,7 @@ export default {
 		extend: {
 			fontFamily: {
 				display: ['Cormorant', 'serif'],
+				logo: ['"Cormorant Garamond"', 'serif'],
 				body: ['"Golos Text"', 'sans-serif']
 			},
 			colors: {
@@ -29,6 +30,11 @@ export default {
 					dark: 'hsl(var(--moss-dark))',
 					light: 'hsl(var(--moss-light))'
 				},
+				wine: {
+					DEFAULT: 'hsl(var(--wine))',
+					dark: 'hsl(var(--wine-dark))'
+				},
+				gold: 'hsl(var(--gold))',
 				clay: 'hsl(var(--clay))',
 				cream: 'hsl(var(--cream))',
 				border: 'hsl(var(--border))',
